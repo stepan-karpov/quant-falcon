@@ -1,0 +1,4 @@
+solana config set --url localhost
+solana balance
+solana airdrop 10
+solana address
