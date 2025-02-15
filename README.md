@@ -28,3 +28,13 @@
 
 - Мой процессор не поддерживался `solana-test-validator` (ошибка: `Incompatible CPU detected: missing AVX support. Please build from source on the target`).
 - Недостаточно оперативной памяти (`solana-test-validator` по умолчанию пытается аллоцировать 1Гб оперативной памяти). Попытался выделить swap, но даже с ним у меня не получилось, пересел на машинку получше.
+
+## Основные команды Solana CLI ([дока](https://solana.com/ru/docs/intro/installation))
+
+- `solana config set --url localhost` - переключиться на localhost
+
+- `solana-keygen new -o /home/ubuntu/.config/solana/id.json` - создать новый кошелек
+
+- `solana address` - показать публичный адрес текущего кошелька
+
+- `solana balance` - показать баланс текущего кошелька
