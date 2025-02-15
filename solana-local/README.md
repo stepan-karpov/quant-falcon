@@ -67,3 +67,28 @@ curl -X POST http://15.236.48.228:8899 \
            "params": []
          }'
 ```
+
+или
+
+```
+curl -X POST http://localhost:8899 \
+     -H "Content-Type: application/json" \
+     -d '{
+           "jsonrpc": "2.0",
+           "id": 1,
+           "method": "getSlot",
+           "params": []
+         }'
+```
+
+## Подключение с клиента
+
+```solana config set --url http://15.236.48.228:8899```
+
+Проверить что работает: ```solana balance 954m3369W174DASH1gyMGFEZaYF74eyxuQbyVMjVatxQ``` - должен быть очень большой т.к. с этого адреса запускался solana-test-validator
+
+## Создание токена (TODO)
+
+```sudo apt install rustup```
+
+```cargo install spl-token-cli```

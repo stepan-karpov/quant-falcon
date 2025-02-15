@@ -10,6 +10,4 @@ RUN apt-get update && apt-get install -y \
 WORKDIR /solana
 
 EXPOSE 8899
-CMD solana-test-validator --log
-
-# ledger folder is: /usr/bin/config/ledger
+CMD solana-test-validator  --ledger /home/test-ledger
