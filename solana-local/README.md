@@ -39,4 +39,31 @@
 
 2. Запуск и сборка Docker-образа
 
-  ```Hello```
+  ```cd solana-local```
+
+  ```sudo docker build -t solana-validator .```
+
+  ```sudo docker images```
+
+  ```sudo docker run -d -d -p 8899:8899 --name solana-validator solana-validator```
+
+  Проверить, что контейнер поднялся: ```sudo docker ps```
+
+  Для подключения к контейнеру: ```sudo docker exec -it solana-validator /bin/bash```
+
+  Для остановки: ```sudo docker stop solana-validator```
+
+  Для удаления: ```sudo docker rm solana-validator```
+
+## Проверка работоспособности
+
+```
+curl -X POST http://15.236.48.228:8899 \
+     -H "Content-Type: application/json" \
+     -d '{
+           "jsonrpc": "2.0",
+           "id": 1,
+           "method": "getSlot",
+           "params": []
+         }'
+```

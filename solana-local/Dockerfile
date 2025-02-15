@@ -1,11 +1,15 @@
-FROM solanafoundation/solana-verifiable-build
+FROM solanalabs/solana:v1.9.24
 
-RUN apt-get update && apt-get install -y python3 python3-pip
+RUN apt-get update && apt-get install -y \
+    curl \
+    unzip \
+    && rm -rf /var/lib/apt/lists/* \
+    procps
 
-WORKDIR /app
 
-# Копируем файл helloworld.py в контейнер
-COPY helloworld.py /app/
+WORKDIR /solana
 
-# Запускаем helloworld.py
-CMD ["python3", "helloworld.py"]
+EXPOSE 8899
+CMD solana-test-validator --log
+
+# ledger folder is: /usr/bin/config/ledger
