@@ -37,7 +37,7 @@
 
   ```sudo systemctl status docker```
 
-2. Запуск и сборка Docker-образа
+2. Сборка и запуск Docker-образа
 
   ```cd solana-local```
 
