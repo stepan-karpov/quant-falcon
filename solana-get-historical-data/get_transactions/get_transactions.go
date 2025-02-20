@@ -26,7 +26,7 @@ type Transaction struct {
 
 const url string = "https://mainnet.helius-rpc.com/?api-key=<tour-api-key>"
 const address string = "6p6xgHyF7AeE6TZkSmFsko444wqoP15icUSqi2jfGiPN" // TRUMP
-const filePath string = "/Users/stepan-karpov/quant-falcon/solana-get-historical-data/get_transactions/transactions.json"
+const filePath string = "/Users/stepan-karpov/Desktop/quant-falcon/solana-get-historical-data/get_transactions/transactions.json"
 
 func ExecuteRequest(lastTransaction string) (string, error) {
 
