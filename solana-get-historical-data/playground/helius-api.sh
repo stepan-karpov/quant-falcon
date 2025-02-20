@@ -21,3 +21,11 @@ curl -L \
   --data '{"jsonrpc":"2.0","id":1,"method":"getTransaction","params":["4naZGV5Fg327oTG4YgFokLR7CCKkrNDZgjd6Bgpv6jZcWHQHGs8SruMNaLY7fjoKTNiPg5ZHimKQAEyUmniLQqaf","json"]}'
 
 # result in transaction_info.json
+
+curl -L \
+  --request POST \
+  --url 'https://mainnet.helius-rpc.com/?api-key=<your-api-key>' \
+  --header 'Content-Type: application/json' \
+  --data '{"jsonrpc":"2.0","id":1,"method":"getTransaction","params":["4CuB5etB1KsJfFuqPLSEAG3SmcmYHyjTe7BHDnxVSaFm7RZRqMo6Cwxrv5KLxnff86hgbXyDLLrxZAg2ocmefm6r",{"maxSupportedTransactionVersion": 0}]}'
+
+# result in trump_transaction_info.json
