@@ -1,0 +1,86 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "blockTime": 1740078663,
+    "meta": {
+      "computeUnitsConsumed": 450,
+      "err": null,
+      "fee": 36250,
+      "innerInstructions": [],
+      "loadedAddresses": {
+        "readonly": [],
+        "writable": []
+      },
+      "logMessages": [
+        "Program 11111111111111111111111111111111 invoke [1]",
+        "Program 11111111111111111111111111111111 success",
+        "Program ComputeBudget111111111111111111111111111111 invoke [1]",
+        "Program ComputeBudget111111111111111111111111111111 success",
+        "Program ComputeBudget111111111111111111111111111111 invoke [1]",
+        "Program ComputeBudget111111111111111111111111111111 success"
+      ],
+      "postBalances": [
+        22559942378767,
+        395630000,
+        1,
+        1
+      ],
+      "postTokenBalances": [],
+      "preBalances": [
+        22560299905017,
+        38140000,
+        1,
+        1
+      ],
+      "preTokenBalances": [],
+      "rewards": [],
+      "status": {
+        "Ok": null
+      }
+    },
+    "slot": 321966611,
+    "transaction": {
+      "message": {
+        "accountKeys": [
+          "ASTyfSima4LLAdDgoFGkgqoKowG1LZFDr9fAQrg7iaJZ",
+          "GgVXANXY7dkaYmmMwVvnq2CofN3njbuS9Jv1E4uD8M6W",
+          "11111111111111111111111111111111",
+          "ComputeBudget111111111111111111111111111111"
+        ],
+        "header": {
+          "numReadonlySignedAccounts": 0,
+          "numReadonlyUnsignedAccounts": 2,
+          "numRequiredSignatures": 1
+        },
+        "instructions": [
+          {
+            "accounts": [
+              0,
+              1
+            ],
+            "data": "3Bxs4EP9Ufg6UNKH",
+            "programIdIndex": 2,
+            "stackHeight": null
+          },
+          {
+            "accounts": [],
+            "data": "3LDhjBMKNSEb",
+            "programIdIndex": 3,
+            "stackHeight": null
+          },
+          {
+            "accounts": [],
+            "data": "KQUSGo",
+            "programIdIndex": 3,
+            "stackHeight": null
+          }
+        ],
+        "recentBlockhash": "3SjF8PqvU6nyGLNtZuWrBaXBdhHd4GuK2p2QGjmTNfUs"
+      },
+      "signatures": [
+        "4naZGV5Fg327oTG4YgFokLR7CCKkrNDZgjd6Bgpv6jZcWHQHGs8SruMNaLY7fjoKTNiPg5ZHimKQAEyUmniLQqaf"
+      ]
+    }
+  },
+  "id": 1
+}
