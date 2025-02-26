@@ -24,8 +24,8 @@ curl -L \
 
 curl -L \
   --request POST \
-  --url 'https://mainnet.helius-rpc.com/?api-key=<your-api-key>' \
+  --url 'https://mainnet.helius-rpc.com/?api-key=<paste-your-api-key>' \
   --header 'Content-Type: application/json' \
-  --data '{"jsonrpc":"2.0","id":1,"method":"getTransaction","params":["4CuB5etB1KsJfFuqPLSEAG3SmcmYHyjTe7BHDnxVSaFm7RZRqMo6Cwxrv5KLxnff86hgbXyDLLrxZAg2ocmefm6r",{"maxSupportedTransactionVersion": 0}]}'
+  --data '{"jsonrpc":"2.0","id":1,"method":"getTransaction","params":["2WMpxfAX991GVEhGDrSRaSCUsXHhTUGhwYa9F4q6odTUncKhenFmfZJRTuZHfKnXs9DCWANh6EX2iZTncd2KH54G", {"maxSupportedTransactionVersion": 0}]}'
 
 # result in trump_transaction_info.json

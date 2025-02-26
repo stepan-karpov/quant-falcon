@@ -33,7 +33,7 @@ curl -L \
 ## Получим последние 10'000 транзакций через код
 
 ```
-cd solana-get-historical-data
-cd get_transactions
-go run get_transactions.go
+cd helius-get-historical-data
+cd src
+go run .
 ```
